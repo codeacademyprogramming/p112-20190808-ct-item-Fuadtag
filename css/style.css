@@ -1,7 +1,8 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box
+    box-sizing: border-box;
+    font-family: sans-serif
 }
 
 .col-4 {
@@ -63,11 +64,27 @@ img {
     color: coral
 }
 
-.overlay .icons i {
-    padding: 15px;
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.icon {
+    position: relative;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     background-color: coral;
-    color: white
+    color: white;
+}
+
+.icon i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 25%;
+    width: 50%
 }
 
 .overlay p {
